@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.main-img{
+  height: 52vh;
+  width: 25vw;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-img:hover{
+  border: 1px solid blue;
 }
+.small-img {
+  height: 17vh;
+  width: 12vw;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.small-img:hover{
+  border: 1px solid blue;
+}
+.set-main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.color {
+  border-radius:50% ;
+  
+  background: linear-gradient( -45deg, white, white 49%, black 49%, black 51%, orange 51% );
+  border: 0.5px solid black;
+  height: 30px;
+  width: 30px;
 }
+.color1 {
+  border-radius:50% ;
+  
+  background: linear-gradient( -45deg, white, white 49%, black 49%, black 51%, rgb(37, 9, 225) 51% );
+  border: 0.5px solid black;
+  height: 30px;
+  width: 30px;
+}
+.color2 {
+  border-radius:50% ;
+ 
+  background: linear-gradient( -45deg, white, white 49%, black 49%, black 51%, black 51%);
+  border: 0.5px solid black;
+  height: 30px;
+  width: 30px;
+}
+.color3 {
+  border-radius:50% ;
+  
+  background: linear-gradient( -45deg, white, white 49%, black 49%, black 51%, green 51%);
+  border: 0.5px solid black;
+  height: 30px;
+  width: 30px;
+}
+.yes{
+  display: flex;
+ 
+}
+.btn-3{
+  display: flex;
+}
+.count {
+  height: 38px;
+  width: 38px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  
+  position: relative;
+  top: 17px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+@media (max-width: 998px) {
+ .main-img{
+  width: 300px;
+  height: 360px;
+ 
   }
-  to {
-    transform: rotate(360deg);
+  .small-img{
+    width: 100px;
+    height: 150px;
   }
+
 }

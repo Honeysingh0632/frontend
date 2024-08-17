@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes ,Navigate} from 'react-router-dom';
 import './App.css';
+import Check from './Components/Check';
+import Product from './Components/Product';
+import Purple from './Components/Purple';
+import Black from './Components/Black';
+import Green from './Components/Green';
+import MyComponent from './Components/Check';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+    <Routes>
+      <Route  path="/"element={<Product/>}></Route>
+      <Route  path="/purple"element={<Purple/>}></Route>
+      <Route  path="/black"element={<Black/>}></Route>
+      <Route  path="/green"element={<Green/>}></Route>
+
+
+    </Routes>   
+    </Router>
+    {/* <MyComponent/> */}
+   
+
+
+
+    </>
+   
+    
   );
 }
 
